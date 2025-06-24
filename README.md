@@ -533,7 +533,7 @@ WITH Facility_Count AS
                 WHEN Ownership = 'NGO' THEN 'Non Governmental Organization'
     	ELSE Ownership
     END AS ownership,
-  Facility_n
+  Facility_name
   FROM sub_saharan_health_facilities_ANA)
 
 SELECT ownership, COUNT(Facility_name) AS Facility_Count
