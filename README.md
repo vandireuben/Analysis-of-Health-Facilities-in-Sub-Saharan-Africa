@@ -229,7 +229,7 @@ SET Facility_type = TRIM(Facility_type);
 ```
 ```sql
 UPDATE sub_saharan_health_facilities_ANA
-SET Facility_type = CONCAT(UPPER(SUBSTRING(Facility_type, 1, 1)), LOWER(SUBSTRING(Facility_type
+SET Facility_type = CONCAT(UPPER(SUBSTRING(Facility_type, 1, 1)), LOWER(SUBSTRING(Facility_type, 2)));
 ```
 ```sql
 UPDATE sub_saharan_health_facilities_ANA
