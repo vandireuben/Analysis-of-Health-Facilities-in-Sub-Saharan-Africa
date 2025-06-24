@@ -536,7 +536,7 @@ WITH Facility_Count AS
   Facility_n
   FROM sub_saharan_health_facilities_ANA)
 
-SELECT ownership, COUNT(Facility_n) AS Facility_Count
+SELECT ownership, COUNT(Facility_name) AS Facility_Count
 FROM Facility_Count
 GROUP BY ownership
 ORDER BY Facility_Count DESC;
@@ -575,7 +575,7 @@ GROUP BY Country;
 #### Number of health facilities in each state in Nigeria
 Katsina, Niger, Kano, Kaduna, and Adamawa recorded the highest volumes, while Gombe, Lagos, Bayelsa, Abia, and the FCT recorded the fewest.
 ```sql
-ELECT Admin1, COUNT(Facility_n) AS Facility_Count
+ELECT Admin1, COUNT(Facility_name) AS Facility_Count
 FROM sub_saharan_health_facilities_ANA
 WHERE Country = 'Nigeria'
 GROUP BY Admin1;
@@ -623,7 +623,7 @@ GROUP BY Admin1;
 
 #### Top 5 states
 ```sql
-SELECT Admin1, COUNT(Facility_n) AS Facility_Count
+SELECT Admin1, COUNT(Facility_name) AS Facility_Count
 FROM sub_saharan_health_facilities_ANA
 WHERE Country = 'Nigeria'
 GROUP BY Admin1
@@ -640,7 +640,7 @@ LIMIT 5;
 
 #### Bottom 5 states
 ```sql
-SELECT Admin1, COUNT(Facility_n) AS Facility_Count
+SELECT Admin1, COUNT(Facility_name) AS Facility_Count
 FROM sub_saharan_health_facilities_ANA
 WHERE Country = 'Nigeria'
 GROUP BY Admin1
@@ -718,10 +718,10 @@ WHERE Country = 'Nigeria';
 
 #### Number of facilities by Facility type in Nigeria
 ```sql
-SELECT  Facility_t, COUNT(Facility_t) AS Facility_Count
+SELECT  Facility_type, COUNT(Facility_t) AS Facility_Count
 FROM sub_saharan_health_facilities_ANA
 WHERE Country = 'Nigeria'
-GROUP BY Facility_t;
+GROUP BY Facility_type;
 ```
 | Facility_type | Facility_Count |
 | --- | --- |
