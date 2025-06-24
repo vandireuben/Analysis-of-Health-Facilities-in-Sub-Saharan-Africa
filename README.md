@@ -330,7 +330,7 @@ FROM sub_saharan_health_facilities_ANA;
 Nigeria, the Democratic Republic of the Congo, and Tanzania have the highest number of healthcare facilities, while Equatorial Guinea, Seychelles, and Guinea-Bissau have the fewest.
 ```sql
 SELECT Country,
-	COUNT(Facility_t) AS Facility_Count
+	COUNT(Facility_type) AS Facility_Count
 FROM sub_saharan_health_facilities_ANA
 GROUP BY Country
 ORDER BY Facility_Count DESC;
