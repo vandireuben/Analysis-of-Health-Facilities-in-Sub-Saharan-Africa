@@ -218,7 +218,7 @@ SET Facility_name = CONCAT(UPPER(SUBSTRING(Facility_name, 1, 1)), LOWER(SUBSTRIN
 ```
 ```sql
 UPDATE sub_saharan_health_facilities_ANA
-SET Facility_n = TRIM(BOTH '?' FROM Facility_n);
+SET Facility_name = TRIM(BOTH '?' FROM Facility_name);
 ```
 
 
