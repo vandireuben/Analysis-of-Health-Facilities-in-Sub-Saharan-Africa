@@ -448,7 +448,7 @@ FROM sub_saharan_health_facilities_ANA
 ORDER BY Ownership;
 ```
 
-#### #### Count Unique Ownership Types
+#### Count Unique Ownership Types
 ```sql
 SELECT count( DISTINCT(Ownership)) AS Count_of_Ownership
 FROM sub_saharan_health_facilities_ANA
