@@ -259,7 +259,7 @@ The dataset contains data from 50 unique countries, 583 states, 93,474 facilitie
 #### Highligh Unique Countries
 ```sql
 SELECT 
-	COUNT(DISTINCT(Country))
+	COUNT(DISTINCT(Country)) AS Country_Count
 FROM sub_saharan_health_facilities_ANA;
 ```
 | Country_Count |
